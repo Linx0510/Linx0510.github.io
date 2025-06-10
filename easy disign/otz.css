@@ -1,0 +1,267 @@
+*{
+    margin: 0%;
+}
+
+.breads{
+    display: flex;
+    padding: 0px 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+h3{
+    color: #579E0B;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.bread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bread>p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.bread>a{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h3{
+    color:  #579E0B;
+}
+main{
+    padding: 0px 20%;
+
+}
+
+       .reviews-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+       
+       
+        .reviews-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,248,248,0.9));
+            border: 2px solid rgba(20, 220, 23, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 35px rgba(20, 220, 47, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .review-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #AEFF58, #579E0B);
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(174, 255, 88, 0.10);
+            border-color: rgba(174, 255, 88, 0.10);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg,  #AEFF58, #579E0B);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(174, 255, 88, 0.10);
+        }
+
+        .user-details h4 {
+            margin: 0;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: Montserrat;
+        }
+
+        .user-details .review-date {
+            color: #000;
+            font-family: Montserrat;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .star {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .star.empty {
+            color: #ddd;
+        }
+
+        .review-text {
+            color: #000;
+            font-family: Montserrat;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .like-btn {
+            background: none;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .like-btn:hover {
+            color:  #AEFF58;
+        }
+
+        
+
+        .add-review-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,248,248,0.9));
+            border: 2px solid rgba(174, 255, 88, 0.10);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 35px rgba(174, 255, 88, 0.10);
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .add-review-section h3 {
+            color: #579E0B;
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #000;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(174, 255, 88, 0.10);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.9);
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #AEFF58;
+            box-shadow: 0 0 0 3px rgba(174, 255, 88, 0.10);
+            background: white;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg,  #AEFF58, #579E0B);
+            color: white;
+            font-family: Montserrat;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(174, 255, 88, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(174, 255, 88, 0.10);
+            background: linear-gradient(45deg, #AEFF58, #579E0B);
+        }

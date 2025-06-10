@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="lk_reg.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="website icon" type="svg"
+    href="img/ikonn.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="aut">
+            <a href="lk_reg.html">Личный кабинет</a>
+
+        </div>
+    </nav>
+    <section class="breads">
+      <h3>Контакты</h3>
+      <div class="bread">
+        <a href="index.html">Главная</a>
+        <p>></p>
+        <p>Личный кабинет</p>
+        <p>></p>
+        <p>Регистрация</p>
+      </div>
+   </section>
+   <main>
+       <div class="add-review-section">
+            <h3><i class="fas fa-edit"></i>Регистрация</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="user-name">Имя<span>*</span></label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Введите имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-name">Телефон<span>*</span></label>
+                    <input type="number" id="user-number" name="user-number" placeholder="Введите номер телефона" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-name">E-mail<span>*</span></label>
+                    <input type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-name">Пароль<span>*</span></label>
+                    <input type="password" id="user-password" name="user-password" placeholder="Придумайте пароль" required>
+                    <p>от 6 символов</p>
+                </div>
+                <div class="form-group">
+                    <label for="user-name">Подтвердите пароль<span>*</span></label>
+                    <input type="password" id="user-npassword" name="user-password" placeholder="Подтвердите пароль" required>
+                    <p>Поле для заполнения</p>
+                </div>
+                <div class="form-groupcb">
+                    <label>
+                        <input type="checkbox" name="personal_data" required checked>
+                        <p>Согласие на обработку персональных данных</p>
+                    </label>
+               </div>
+                        
+                
+                        
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Зарегистрироваться
+                </button>
+            </form>
+        </div>
+
+       <div class="reg">
+          <img src="img/reg.png" alt="">
+          <h4>Есть аккаунт?</h4>
+          <p>Войдите в личный кабинет и продолжайте обучение</p>
+          <div class="button_b2">
+                <a href="lk_aut.html">Войти</a>
+                <span class="icon"></span>
+            </div>
+      </div>
+   </main>
+<script src="auth.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('review-form');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('user-name').value.trim();
+        const phone = document.getElementById('user-number').value.trim();
+        const email = document.getElementById('user-email').value.trim();
+        const password = document.getElementById('user-password').value;
+        const confirmPassword = document.getElementById('user-npassword').value;
+        
+        if (!validateName(name)) {
+            alert('Имя должно содержать минимум 2 символа');
+            return;
+        }
+        
+        if (!validatePhone(phone)) {
+            alert('Пожалуйста, введите корректный номер телефона');
+            return;
+        }
+        
+        if (!validateEmail(email)) {
+            alert('Пожалуйста, введите корректный email');
+            return;
+        }
+        
+        if (!validatePassword(password)) {
+            alert('Пароль должен содержать минимум 6 символов');
+            return;
+        }
+        
+        if (password !== confirmPassword) {
+            alert('Пароли не совпадают');
+            return;
+        }
+        
+        if (getUserByEmail(email)) {
+            alert('Пользователь с таким email уже зарегистрирован');
+            return;
+        }
+        
+        const user = {
+            name,
+            phone,
+            email,
+            password 
+        };
+        
+        saveUser(user);
+        
+        window.location.href = 'lk.html';
+    });
+});
+</script>
+</body>
+<footer>
+    <div class="strok_f1">
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="put">
+            <p>@2025"Easy design"</p>
+        </div>
+    </div>
+    <div class="strok_f2">
+        <a href="">Политика платформы</a>
+    </div>
+</footer>
+</html>

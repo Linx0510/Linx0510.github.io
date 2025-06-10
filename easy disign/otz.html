@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="otz.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="website icon" type="svg"
+    href="img/ikonn.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="aut">
+            <a href="lk_aut.html">Личный кабинет</a>
+
+        </div>
+    </nav>
+   <section class="breads">
+      <h3>Отзывы</h3>
+      <div class="bread">
+        <a href="index.html">Главная</a>
+        <p>></p>
+        <p>Отзывы</p>
+      </div>
+   </section>
+  <main>
+        <div class="reviews-container">
+            <div class="reviews-section">
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <div class="user-avatar">А</div>
+                                <div class="user-details">
+                                    <h4>Анна </h4>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Никогда не думала, что смогу освоить Figma за 2 недели! Курс построен так логично, что даже сложные темы стали простыми. Уже сделала первый лендинг для друга-фотографа — он в восторге. Бесплатно получить столько знаний — просто подарок!
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <div class="user-avatar">М</div>
+                                <div class="user-details">
+                                    <h4>Михаил</h4>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star empty"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            После 10 лет в продажах решил попробовать дизайн. Боялся, что не справлюсь, но уроки с практикой после каждого видео — это гениально. Теперь верстаю сайты в Tilda и беру первые заказы. Спасибо за старт в новой профессии!                        
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <div class="user-avatar">Е</div>
+                                <div class="user-details">
+                                    <h4>Елена</h4>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Училась в перерывах между делами. Понравилось, что можно смотреть уроки с телефона. Задания — без воды, только то, что реально пригодится. Первый заказ получила через 3 недели после старта!
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="add-review-section">
+                    <h3><i class="fas fa-edit"></i> Оставить отзыв</h3>
+                    <form id="review-form">
+                        <div class="form-group">
+                            <label for="user-name">Ваше имя</label>
+                            <input type="text" id="user-name" name="user-name" placeholder="Введите ваше имя" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rating">Оценка</label>
+                            <select id="rating" name="rating" required>
+                                <option value="">Выберите оценку</option>
+                                <option value="5">⭐⭐⭐⭐⭐ Отлично</option>
+                                <option value="4">⭐⭐⭐⭐ Хорошо</option>
+                                <option value="3">⭐⭐⭐ Нормально</option>
+                                <option value="2">⭐⭐ Плохо</option>
+                                <option value="1">⭐ Ужасно</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="review-text">Ваш отзыв</label>
+                            <textarea id="review-text" name="review-text" placeholder="Поделитесь впечатлениями о посещении кинотеатра..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить отзыв
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+      <script>
+        document.getElementById('review-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const userName = document.getElementById('user-name').value;
+            const rating = document.getElementById('rating').value;
+            const reviewText = document.getElementById('review-text').value;
+            
+            if (!userName || !rating || !reviewText) {
+                alert('Пожалуйста, заполните все поля');
+                return;
+            }
+            
+            const reviewsList = document.querySelector('.reviews-list');
+            const newReview = document.createElement('div');
+            newReview.className = 'review-card';
+            newReview.style.opacity = '0';
+            newReview.style.transform = 'translateY(20px)';
+            
+            const userInitial = userName.charAt(0).toUpperCase();
+            
+            newReview.innerHTML = `
+                <div class="review-header">
+                    <div class="user-info">
+                        <div class="user-avatar">${userInitial}</div>
+                        <div class="user-details">
+                            <h4>${userName}</h4>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        ${Array.from({length: 5}, (_, i) => 
+                            `<i class="fas fa-star ${i < rating ? 'star' : 'star empty'}"></i>`
+                        ).join('')}
+                    </div>
+                </div>
+                <p class="review-text">${reviewText}</p>
+            `;
+            
+            reviewsList.insertBefore(newReview, reviewsList.firstChild);
+            setTimeout(() => {
+                newReview.style.transition = 'all 0.5s ease';
+                newReview.style.opacity = '1';
+                newReview.style.transform = 'translateY(0)';
+            }, 100);
+            
+            this.reset();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Отзыв добавлен!';
+            submitBtn.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(45deg, #AEFF58, #579E0B)';
+            }, 2000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.review-card, .stat-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+    </script>
+</body>
+<footer>
+    <div class="strok_f1">
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="put">
+            <p>@2025"Easy design"</p>
+        </div>
+    </div>
+    <div class="strok_f2">
+        <a href="">Политика платформы</a>
+    </div>
+</footer>
+</html>

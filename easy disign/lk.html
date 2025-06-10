@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="lk.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="website icon" type="svg"
+    href="img/ikonn.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="aut">
+            <a href="#" id="logout-btn">Выйти</a>
+        </div>
+    </nav>
+
+    <section class="breads">
+      <h3>Личный кабинет</h3>
+      <div class="bread">
+        <a href="index.html">Главная</a>
+        <p>></p>
+        <p>Личный кабинет</p>
+      </div>
+    </section>
+
+    <main class="lk-main">
+        <div class="user-profile">
+            <h2>Профиль пользователя</h2>
+            <div class="user-info" id="user-info">
+            </div>
+            <div class="user-actions">
+                <button id="edit-profile-btn">Редактировать профиль</button>
+                <button id="change-password-btn">Изменить пароль</button>
+            </div>
+        </div>
+
+        <div class="user-courses">
+            <h2>Мои курсы</h2>
+            <div class="courses-list" id="courses-list">
+                <p>У вас пока нет активных курсов.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!checkAuth()) {
+            alert('Пожалуйста, войдите в систему');
+            window.location.href = 'lk_aut.html';
+            return;
+        }
+
+        const user = getCurrentUser();
+        
+        const userInfo = document.getElementById('user-info');
+        userInfo.innerHTML = `
+            <p><strong>Имя:</strong> ${user.name}</p>
+            <p><strong>Email:</strong> ${user.email}</p>
+            <p><strong>Телефон:</strong> ${user.phone}</p>
+        `;
+
+        document.getElementById('logout-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            logout();
+        });
+
+        document.getElementById('edit-profile-btn').addEventListener('click', function() {
+            alert('Функция редактирования профиля будет реализована в будущем');
+        });
+
+        document.getElementById('change-password-btn').addEventListener('click', function() {
+            alert('Функция изменения пароля будет реализована в будущем');
+        });
+    });
+    </script>
+</body>
+<footer>
+    <div class="strok_f1">
+        <div class="logo">
+          <a href="index.html">Easy design</a>
+        </div>
+        <div class="link">
+            <a href="lesson.html">Уроки</a>
+            <a href="otz.html">Отзывы</a>
+            <a href="contacs.html">Контакты</a>
+        </div>
+        <div class="put">
+            <p>@2025"Easy design"</p>
+        </div>
+    </div>
+    <div class="strok_f2">
+        <a href="">Политика платформы</a>
+    </div>
+</footer>
+</html>

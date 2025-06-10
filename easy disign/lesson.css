@@ -1,0 +1,139 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 20%;
+}
+
+*{
+    margin: 0%;
+}
+.breads{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+    align-content: flex-start;
+}
+h3{
+    color: #07F;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.bread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bread>p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.bread>a{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 40px;
+}
+
+.less{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.lesss{
+    width: 320px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid #000;
+}
+
+.lesss>a{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.lesss>a:hover  {
+    color: #07F;
+    text-decoration: underline #07F;
+}
+
+
+.mainn{
+    display: flex;
+    width: 728px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+}
+p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+li{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.headerr{
+    color: #07F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.unhead{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
