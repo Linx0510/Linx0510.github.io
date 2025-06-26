@@ -77,13 +77,16 @@ nav li > a:hover {
     .menu-toggle {
         display: flex;
     }
-    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
     nav > ul {
         position: fixed;
         top: 0;
         right: -100%;
         width: 70%;
-        height: 50vh;
+        height: 100vh;
         background-color: #03070A;
         flex-direction: column;
         justify-content: center;
@@ -112,3 +115,4 @@ nav li > a:hover {
         transform: translateY(-9px) rotate(-45deg);
     }
 }
+
