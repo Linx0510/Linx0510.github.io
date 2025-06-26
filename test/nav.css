@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'UniSans';
-    src: url(Fonts/ofont.ru_Uni\ Sans.ttf) format('truetype');
-}
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -11,6 +7,7 @@ nav {
     display: flex;
     padding: 0px 10vw;
     justify-content: space-between;
+    gap: 10px;
     align-items: center;
     width: 100%;
     position: relative;
@@ -80,18 +77,13 @@ nav li > a:hover {
     .menu-toggle {
         display: flex;
     }
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-    }
+    
     nav > ul {
         position: fixed;
         top: 0;
         right: -100%;
         width: 70%;
-        height: 100vh;
+        height: 50vh;
         background-color: #03070A;
         flex-direction: column;
         justify-content: center;
@@ -108,7 +100,6 @@ nav li > a:hover {
         font-size: 20px;
     }
     
-    /* Анимация гамбургера */
     .menu-toggle.active span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
@@ -117,11 +108,6 @@ nav li > a:hover {
         opacity: 0;
     }
     
-    .menu-toggle.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-}
-
     .menu-toggle.active span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
