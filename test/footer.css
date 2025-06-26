@@ -63,6 +63,7 @@ footer {
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
+    margin-bottom: 5px;
 }
 
 .coloumn2 a:hover, .links a:hover {
@@ -121,7 +122,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Адаптация для очень маленьких экранов */
 @media (max-width: 480px) {
     .abotusleft, .aboutusright {
         border: none;
