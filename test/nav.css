@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'UniSans';
+    src: url(Fonts/ofont.ru_Uni\ Sans.ttf) format('truetype');
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 0px 10vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+nav li {
+    color: #EFEFEF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+nav li > a {
+    color: #EFEFEF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav li > a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #EFEFEF;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    nav > ul {
+        gap: 20px;
+    }
+    
+    nav li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav > ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #03070A;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.3s ease;
+    }
+    
+    nav > ul.active {
+        right: 0;
+    }
+    
+    nav li {
+        font-size: 20px;
+    }
+    
+    /* Анимация гамбургера */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
