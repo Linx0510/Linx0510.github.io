@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="otzv.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="website icon" type="svg"
+    href="img/ikon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="blok1">
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+             <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="katalog.html">Услуги</a></li>
+                    <li><a href="partner.html">Партнёры</a></li>
+                </ul>
+                <ul >
+                    <li><a href="vedyshi.html">Ведущий</a></li>
+                    <li><a href="otzv.html">Отзывы</a></li>
+                    <li><a href="contacs.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fon">
+            <div class="headin_ikon">
+                <img class="img_fon" src="img/ikon_fon.svg" alt="">
+                <div class="heading">
+                    <h2>Отзывы</h2>
+                    <h3>Поделитесь впечатлениями </h3>
+                </div>
+            </div>
+            <div class="arrow_blok" data-target="blok_2">
+                <img src="img/arrow.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <main id="blok_2">
+        <div class="otzv">
+            <img src="img/otzzv1.png" alt="">
+            <div class="textblok">
+                <h5>Анна</h5>
+                <p>Уровень знания своего дела - Сергей мастерски управлял всеми моментами вечера - от приветствия гостей до проведения конкурсов. Его чувство юмора, легкость и умение поддерживать контакт с публикой сделали праздник незабываемым. 
+                    Абсолютно уверена, что без него это мероприятие не было бы таким ярким и запоминающимся. Сергей сумел создать позитивную и уютную атмосферу.
+                    У меня большой опыт посещения свадеб, но более профессионального и креативного ведущего я еще не встречала. И, кажется, я точно определилась с ведущим на собственной свадьбе.</p>
+            </div>
+        </div>
+         <div class="otzv">
+            <img src="img/otzzv2.png" alt="">
+            <div class="textblok">
+                <h5>Мария</h5>
+                <p>Сергей - настоящий профессионал! Он смог создать такую атмосферу на нашей свадьбе, что гости до сих пор вспоминают этот вечер. Все конкурсы были подобраны идеально под нашу компанию.
+                            Отдельно хочу отметить его умение чувствовать настроение гостей и подстраиваться под ситуацию. Когда некоторые гости немного устали, он быстро переключился на более спокойную программу.
+                            Рекомендую Сергея как ведущего на 100% - вы точно не пожалеете!</p>
+            </div>
+        </div>
+         <div class="otzv">
+            <img src="img/otzzv3.png" alt="">
+            <div class="textblok">
+                <h5>Дмитрий</h5>
+                <p> Мы с женой долго выбирали ведущего и не ошиблись с Сергеем! Он не просто отработал по программе, а действительно сделал наш праздник особенным.
+                            Все гости отметили его тонкое чувство юмора и такт - никто не был поставлен в неловкое положение, но при этом все веселились от души.
+                            Через год после свадьбы друзья до сих пор вспоминают некоторые моменты и шутки. Это лучшая рекомендация для ведущего!</p>
+            </div>
+        </div>
+    </main>
+    <div class="otzv-form">
+        <h3>Оставить отзыв</h3>
+        <form id="reviewForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" id="name" class="form-input" placeholder="Введите ваше имя">
+                <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>            
+            </div>
+            
+            <div class="form-group">
+                <label for="photo" class="form-label">Добавить фото</label>
+                <div class="upload-container">
+                    <div class="upload-box">
+                        <div class="upload-icon">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 42.2473C30 42.2473 32.129 47.397 30 47.7519C27.871 48.1067 16.516 48.1067 14.387 47.7519C12.258 47.397 14.387 42.2487 14.387 42.2487M22.157 44.3467L22.126 33.193M26.769 37.3737L22.128 32.8486L17.484 37.3724" stroke="#EFEFEF" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    <div class="upload-text">Перетащите фото сюда или кликните для загрузки</div>
+                <input type="file" class="upload-input" accept="image/*">
+            </div>
+        </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Отзыв</label>
+                <textarea id="message" class="form-input" placeholder="Введите ваше сообщение"></textarea>
+                <div class="error-message" id="messageError">Пожалуйста, введите ваш отзыв</div>            
+            </div>
+
+            <button type="submit" class="submit-btn">Отправить</button>
+
+        </form>
+    </div>
+    <script src="otzv.js"></script>
+</body>
+<footer>
+    <section class="footer_1">
+        <div class="coloumn1">
+            <div class="ikon_clmn_1">
+                <img src="ikon_footer/ikon 1.svg" alt="">
+                <h4>WEDDING</h4>
+                <p>Свадебное агентство</p>
+            </div>
+            <p>Ваш идеальный день начинается с нас! <br>Каждая деталь - от первого взгляда до <br>последнего танца - будет продумана с <br>трепетом и профессионализмом.</p>
+        </div>
+        <div class="coloumn2">
+            <a href="katalog.html">Услуги</a>
+            <a href="partner.html">Парнёры</a>
+            <a href="vedyshi.html">Ведущий</a>
+            <a href="otzv.html">Отзыв</a>
+        </div>
+        <div class="coloumn2">
+            <p>По любым вопросам:</p>
+            <div class="links">
+                <img src="ikon_footer/email.svg" alt="">
+                <a href="mailto:pochta@skuvshinov.ru?subject=Тема сообщения&body=Привет">pochta@skuvshinov.ru</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/number.svg" alt="">
+                <a href="tel:+79991061303">8 (999) 106 13 03</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/geo.svg" alt="">
+                <a href="https://yandex.ru/maps/-/CHgyV8k~">г.Оренбург, <br>просп. Дзержинского, 17</a>
+            </div>
+        </div>
+        <div class="coloumn2">
+            <div class="links">
+                <img src="ikon_footer/vk.svg" alt="">
+                <a href="https://vk.com/mrjar">VK</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/tg.svg" alt="">
+                <a href="https://t.me/SerezhaKuvshinov">Telegram</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/tg.svg" alt="">
+                <a href="https://t.me/Sergynsmouth">Tg Канал</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/whatsapp.svg" alt="">
+                <a href="https://wa.me/+79991061303">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer_2"> 
+        <div class="foot">
+            <p>© 2025 Свадебное агенство. Все права защищены.</p>
+            <div class="ft_2">
+                <a href="">Политика конфиденциальности</a>
+                <a href="">Договор оферты</a>
+            </div>
+        </div>
+    </section>
+</footer>
+<script>
+    const buttons = document.querySelectorAll('.arrow_blok');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetBlock = document.getElementById(targetId);
+            targetBlock.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+<script src="nav.js"></script>
+</html>

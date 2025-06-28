@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="website icon" type="svg"
+    href="img/ikon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="blok1">
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+             <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="katalog.html">Услуги</a></li>
+                    <li><a href="partner.html">Партнёры</a></li>
+                </ul>
+                <ul >
+                    <li><a href="vedyshi.html">Ведущий</a></li>
+                    <li><a href="otzv.html">Отзывы</a></li>
+                    <li><a href="contacs.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fon">
+            <div class="headin_ikon">
+                <img class="img_fon" src="img/ikon_fon.svg" alt="">
+                <div class="heading">
+                    <h2>Контакты</h2>
+                    <h3>Пиши или звони нам</h3>
+                </div>
+            </div>
+            <div class="arrow_blok" data-target="blok_2">
+                <img src="img/arrow.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <main id="blok_2">
+        <div class="coloumn11">
+            <div class="stroke1">
+                <h4>Свяжитесь с нами</h4>
+                <div class="main_stroke1">
+                    <div class="link">
+                        <img src="ikon_footer/number.svg" alt="">
+                        <div class="text_link">
+                            <h5>Телефон</h5>
+                            <a href="tel:+79991061303">8 (999) 106 13 03</a>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <img src="ikon_footer/email.svg" alt="">
+                        <div class="text_link">
+                            <h5>Электронная почта</h5>
+                            <a href="mailto:pochta@skuvshinov.ru?subject=Тема сообщения&body=Привет">pochta@skuvshinov.ru</a>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <img src="ikon_footer/clookc.svg" alt="">
+                        <div class="text_link">
+                            <h5>Часы работы</h5>
+                            <h6>Ежедневно: 10:00 - 22:00</h6>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="stroke2">
+                <h4>Мы с социальных сетях</h4>
+                <div class="mainstroke2">
+                    <a href="https://vk.com/mrjar" title="Перейти в ВКонтакте"><img src="ikon_footer/vk.svg" alt=""></a>
+                    <a href="https://t.me/SerezhaKuvshinov" title="Перейти на аккаунт Telegram"><img src="ikon_footer/tg.svg" alt=""></a>
+                    <a href="https://t.me/Sergynsmouth" title="Перейти в Tg Канал"><img src="ikon_footer/tg.svg" alt=""></a>
+                    <a href="https://wa.me/+79991061303" title="Перейти в WhatsApp"><img src="ikon_footer/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="coloumn22">
+            <div class="stroke1">
+                <h4>Как нас найти</h4>
+                <div class="main_stroke1">
+                    <div class="link">
+                        <img src="ikon_footer/geo.svg" alt="">
+                       <a href="https://yandex.ru/maps/-/CHgyV8k~">г.Оренбург,просп. Дзержинского, 17</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2465.669887202587!2d55.12161097653114!3d51.830460571888565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417bf68526f21d73%3A0xef5281e82867f942!2z0L_RgNC-0YHQvy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNywg0J7RgNC10L3QsdGD0YDQsywg0J7RgNC10L3QsdGD0YDQs9GB0LrQsNGPINC-0LHQuy4sIDQ2MDA0NA!5e0!3m2!1sru!2sru!4v1750989270410!5m2!1sru!2sru" width="511" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <div class="container">
+        <div class="form-header">
+            <h4 class="form-title">Обратная связь</h4>
+        </div>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" id="name" class="form-input" placeholder="Введите ваше имя">
+                <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="Введите ваш email">
+                <div class="error-message" id="emailError">Пожалуйста, введите корректный email</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea id="message" class="form-input" placeholder="Введите ваше сообщение"></textarea>
+                <div class="error-message" id="messageError">Пожалуйста, введите ваше сообщение</div>
+            </div>
+            
+            
+            <button type="submit" class="submit-btn">Отправить</button>
+            
+        </form>
+    </div>
+</body>
+<footer>
+    <section class="footer_1">
+        <div class="coloumn1">
+            <div class="ikon_clmn_1">
+                <img src="ikon_footer/ikon 1.svg" alt="">
+                <h4>WEDDING</h4>
+                <p>Свадебное агентство</p>
+            </div>
+            <p>Ваш идеальный день начинается с нас! <br>Каждая деталь - от первого взгляда до <br>последнего танца - будет продумана с <br>трепетом и профессионализмом.</p>
+        </div>
+        <div class="coloumn2">
+            <a href="katalog.html">Услуги</a>
+            <a href="partner.html">Парнёры</a>
+            <a href="vedyshi.html">Ведущий</a>
+            <a href="otzv.html">Отзыв</a>
+        </div>
+        <div class="coloumn2">
+            <p>По любым вопросам:</p>
+            <div class="links">
+                <img src="ikon_footer/email.svg" alt="">
+                <a href="mailto:pochta@skuvshinov.ru?subject=Тема сообщения&body=Привет">pochta@skuvshinov.ru</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/number.svg" alt="">
+                <a href="tel:+79991061303">8 (999) 106 13 03</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/geo.svg" alt="">
+                <a href="https://yandex.ru/maps/-/CHgyV8k~">г.Оренбург, <br>просп. Дзержинского, 17</a>
+            </div>
+        </div>
+        <div class="coloumn2">
+            <div class="links">
+                <img src="ikon_footer/vk.svg" alt="">
+                <a href="https://vk.com/mrjar">VK</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/tg.svg" alt="">
+                <a href="https://t.me/SerezhaKuvshinov">Telegram</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/tg.svg" alt="">
+                <a href="https://t.me/Sergynsmouth">Tg Канал</a>
+            </div>
+            <div class="links">
+                <img src="ikon_footer/whatsapp.svg" alt="">
+                <a href="https://wa.me/+79991061303">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer_2"> 
+        <div class="foot">
+            <p>© 2025 Свадебное агенство. Все права защищены.</p>
+            <div class="ft_2">
+                <a href="">Политика конфиденциальности</a>
+                <a href="">Договор оферты</a>
+            </div>
+        </div>
+    </section>
+</footer>
+<script>
+    const buttons = document.querySelectorAll('.arrow_blok');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetBlock = document.getElementById(targetId);
+            targetBlock.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            
+            resetErrors();
+            
+            let isValid = true;
+            
+            const name = document.getElementById('name').value.trim();
+            if (name === '') {
+                showError('nameError', 'name');
+                isValid = false;
+            }
+            
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '' || !emailRegex.test(email)) {
+                showError('emailError', 'email');
+                isValid = false;
+            }
+  
+            
+            const message = document.getElementById('message').value.trim();
+            if (message === '') {
+                showError('messageError', 'message');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Форма успешно отправлена!');
+                this.reset();
+            }
+        });
+        
+        function showError(errorElementId, inputId) {
+            const errorElement = document.getElementById(errorElementId);
+            const inputElement = document.getElementById(inputId);
+            
+            errorElement.style.display = 'block';
+            inputElement.classList.add('error');
+        }
+        
+        function resetErrors() {
+            const errorMessages = document.querySelectorAll('.error-message');
+            const inputs = document.querySelectorAll('.form-input');
+            
+            errorMessages.forEach(msg => {
+                msg.style.display = 'none';
+            });
+            
+            inputs.forEach(input => {
+                input.classList.remove('error');
+            });
+        }
+        
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', function() {
+                const errorId = this.id + 'Error';
+                const errorElement = document.getElementById(errorId);
+                
+                if (errorElement.style.display === 'block') {
+                    errorElement.style.display = 'none';
+                    this.classList.remove('error');
+                }
+            });
+        });
+</script>
+<script src="nav.js"></script>
+</html>

@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #03070A;
+    font-family: Montserrat, sans-serif;
+    color: #EFEFEF;
+    overflow-x: hidden;
+    gap: 40px;
+}
+
+.bread {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.bread > p, .bread > a {
+    color: #EFEFEF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bread > a {
+    text-decoration: none;
+}
+
+.bread > a:hover {
+    text-decoration: underline;
+}
+
+.blok1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5%;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.blok1 > h1 {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(28px, 5vw, 40px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 100%;
+    text-align: left;
+}
+
+.main_blok1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: stretch;
+}
+
+@media (min-width: 768px) {
+    .main_blok1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.coloumn_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.coloumn_1 > p {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_coloumn_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main_coloumn_1 > p {
+    color: #EFEFEF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.premium {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.li {
+    display: flex;
+    padding: 0px 10px;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.li_text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p1 {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(14px, 3vw, 16px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.p2 {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(12px, 3vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.coloumn_2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .coloumn_2 {
+        width: 50%;
+        min-width: 400px;
+    }
+}
+
+.stroke_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+@media (min-width: 480px) {
+    .stroke_1 {
+        flex-direction: row;
+    }
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.stroke_1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.stroke_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+}
+
+@media (min-width: 480px) {
+    .stroke_2 {
+        flex-direction: row;
+    }
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #EFEFEF;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(239, 239, 239, 0.12);
+}
+
+.button:hover {
+    box-shadow: 3px 6px 12px rgba(239, 239, 239, 0.5);
+    transform: translateY(-2px);
+}
+
+.button a {
+    color: #03070A;
+    font-family: Montserrat;
+    font-size: clamp(18px, 2vw, 18px);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.opisanie {
+    display: flex;
+    padding: 0 5%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.opisanie > h1 {
+    color: #EFEFEF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: clamp(28px, 5vw, 36px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+details {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #EFEFEF;
+}
+ 
+summary {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(18px, 3vw, 22px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+details > p {
+    margin: 20px  20px;
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(14px, 3vw, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.other {
+    width: 100%;
+}
+
+.h1 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 5%;
+}
+
+.h1 > h1 {
+    color: #EFEFEF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: clamp(28px, 5vw, 36px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.blok_uslugi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .blok_uslugi {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.usluga_1, .usluga_2, .usluga_3 {
+    width: 100%;
+    min-height: 400px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 480px) {
+    .usluga_1, .usluga_2, .usluga_3 {
+        min-height: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .usluga_1, .usluga_2, .usluga_3 {
+        width: calc(50% - 15px);
+        min-height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .usluga_1, .usluga_2, .usluga_3 {
+        width: calc(33.33% - 20px);
+    }
+}
+
+.usluga_1 {
+    background: linear-gradient(180deg, rgba(3, 7, 10, 0.70) 0%, rgba(3, 7, 10, 0.00) 100%), 
+               linear-gradient(0deg, rgba(3, 7, 10, 0.50) 0%, rgba(3, 7, 10, 0.50) 100%), 
+               url(img/onelife.png) lightgray 50% / cover no-repeat;
+}
+
+.usluga_2 {
+    background: linear-gradient(180deg, rgba(3, 7, 10, 0.70) 0%, rgba(3, 7, 10, 0.00) 100%), 
+               linear-gradient(0deg, rgba(3, 7, 10, 0.50) 0%, rgba(3, 7, 10, 0.50) 100%), 
+               url(img/case.png) lightgray 50% / cover no-repeat;
+}
+
+.usluga_3 {
+    background: linear-gradient(180deg, rgba(3, 7, 10, 0.70) 0%, rgba(3, 7, 10, 0.00) 100%), 
+               linear-gradient(0deg, rgba(3, 7, 10, 0.50) 0%, rgba(3, 7, 10, 0.50) 100%), 
+               url(img/Lechancefinale.png) lightgray 50% / cover no-repeat;
+}
+
+.headuslyga {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.number {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #EFEFEF;
+}
+
+.number p {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.text h3 {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(16px, 3vw, 18px);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: clamp(12px, 3vw, 14px);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.button_2 {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #EFEFEF;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.usluga_1:hover .button_2,
+.usluga_2:hover .button_2,
+.usluga_3:hover .button_2 {
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 3px 6px 12px rgba(239, 239, 239, 0.5);
+}
+
+.button_2 a {
+    color: #03070A;
+    font-family: Montserrat;
+    font-size: clamp(18px, 3vw, 16px);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+    .bread, .blok1, .opisanie, .h1, .blok_uslugi {
+        padding: 20px 10vw;
+    }
+    
+    .main_blok1 {
+        gap: 50px;
+    }
+    
+    .coloumn_2 {
+        min-width: 500px;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        gap: 60px;
+    }
+    
+    .bread, .blok1, .opisanie, .h1, .blok_uslugi {
+        padding: 20px 15vw;
+    }
+    
+    .coloumn_2 {
+        min-width: 600px;
+    }
+}

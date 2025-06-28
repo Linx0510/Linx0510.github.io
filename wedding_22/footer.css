@@ -1,0 +1,149 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0vw;
+    gap: 30px;
+    border-top: 1px solid #EFEFEF;
+}
+
+.footer_1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10vw;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.coloumn1 {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ikon_clmn_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ikon_clmn_1 h4 {
+    color: #EFEFEF;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.ikon_clmn_1 p, .coloumn1 p {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.coloumn2 {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.coloumn2 a, .coloumn2 p, .links a {
+    color: #EAF2FB;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.coloumn2 a:hover, .links a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links img {
+    width: 20px;
+    height: auto;
+}
+
+.footer_2 {
+    width: 100%;
+    padding: 0px 10vw;
+    padding-top: 30px;
+    border-top: 1px solid #EFEFEF;
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.foot p {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ft_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ft_2 a {
+    color: #EFEFEF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.ft_2 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .abotusleft, .aboutusright {
+        border: none;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .slide {
+        padding: 10px;
+    }
+    
+    .arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    .footer_1 {
+        gap: 30px;
+    }
+    
+    .coloumn1, .coloumn2 {
+        min-width: 100%;
+    }
+}
